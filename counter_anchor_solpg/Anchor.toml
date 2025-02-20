@@ -1,11 +1,9 @@
-[toolchain]
-
 [features]
-resolution = true
+seeds = false
 skip-lint = false
 
 [programs.localnet]
-bull_cows_anchor = "6htg2hDNG9esMSo3V6c7cmJwXg5fwe2UnWg6RbaNYviW"
+counter = "J3eWHBWU8umVjxXNbkiKrK2VHCSME9XTmGq5LqUW5mta"
 
 [registry]
 url = "https://api.apr.dev"
@@ -16,3 +14,4 @@ wallet = "~/.config/solana/id.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+client = "yarn run ts-node client/*.ts"
